@@ -31,7 +31,7 @@ module fontrom(
 	reg [7:0] rom[0:ROM_SIZE-1];
 
 	initial begin
-		$readmemb("fontrom.txt", rom, 0, ROM_SIZE-1);
+		$readmemb("fontrom.dat", rom, 0, ROM_SIZE-1);
 	end
 
 	wire [7:0] rom_byte;

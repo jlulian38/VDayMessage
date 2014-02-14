@@ -23,7 +23,7 @@ module string_display
 	  parameter OFFSET_Y=0,
 	  parameter SCALE = 0,
 	  parameter COLOR = 8'b11111111,
-	  parameter FILE = "hello.txt",
+	  parameter FILE = "hello.dat",
 	  parameter LENGTH = 12
 	)
 	(input [10:0] hcnt,
