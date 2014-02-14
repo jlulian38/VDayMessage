@@ -155,7 +155,7 @@ module vga_driver(
 		  .SCALE(2),
 	          .FILE("line4.dat"),
 		  .LENGTH(1))
-	line1_inst (
+	line4_inst (
 		.hcnt(hcnt), 
 		.vcnt(vcnt), 
 		.enable(1'b1), 
