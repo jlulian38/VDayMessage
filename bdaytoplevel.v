@@ -21,6 +21,7 @@
 module bdaytoplevel(
 		input clk_fpga,
 		input reset,
+		input button,
 		
 		output HS,
 		output VS,
@@ -40,6 +41,7 @@ module bdaytoplevel(
 	vga_driver vga_driver (
 		.clk(clk_25m), 
 		.reset(reset), 
+		.button(button),
 		.HS(HS), 
 		.VS(VS), 
 		.rgb(rgb)

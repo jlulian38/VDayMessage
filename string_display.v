@@ -28,6 +28,7 @@ module string_display
 	)
 	(input [10:0] hcnt,
 	 input [10:0] vcnt,
+	 input [7:0] display_length,
 	 input enable,
 	 
 	 output [7:0] rgb,
@@ -60,7 +61,7 @@ module string_display
 	
 	//bounding box check
 	always @(hcnt_offset, vcnt_offset, hcnt_scale, vcnt_scale)
-		if (hcnt_offset > 0 && hcnt_scale < 8*LENGTH
+		if (hcnt_offset > 0 && hcnt_scale < 8*display_length
 			 && vcnt_offset > 0 && vcnt_scale < 8)
 			active = 1'b1;
 		else
